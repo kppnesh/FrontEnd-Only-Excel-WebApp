@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html style="height:100%;overflow-y:hidden;">
+
+<head>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/getData.js"></script>
+    <script src="scripts/renderPage.js"></script>
+
+    <div id="myExcelDiv" style="width: 402px; height: 346px; display: none;"></div>
+    <script type="text/javascript"
+        src="https://onedrive.live.com/embed?resid=C101E30A259BFF88%21282&authkey=%21AB0RNlXD3rPti00&em=3&wdDivId=%22myExcelDiv%22&wdDownloadButton=1&wdHideGridlines=1&wdHideHeaders=1&wdAllowInteractivity=1"></script>
+</head>
+
+<body style="height: 100%;margin: 0%;">
+    <p>PDC</p>
+    <div id="menuBar" style="height: 66px;width: 100%;">
+    </div>
+    <div>
+    <table id="myTableData"  border="1" cellpadding="2" >
+        <tr id="todelete">
+            <th><b>File Name</b></th>
+            <th><b>link</b></th>
+        </tr>
+    </table>
+    </div>
+     <input type="button" id="GetRange" value="Get Range" onclick="getRangeFromSheetButton()" />
+     <input type="button" id="GetRange" value="reset table" onclick="resetTable()" />
+   <!--  <input type="button" id="GetRange" value="Get Range" onclick="render()" />-->
+   <div id="ren" style="width: 100%; height: 100%;">
+
+   </div>
+    
+</body>
+
+</html>
